@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anita Collections | The Essence of India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="logo">Anita <span>Collections</span></div>
+            
+            <div class="mobile-menu-icon" id="mobileMenuBtn">☰</div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#collection" class="nav-link">Sarees</a></li>
+                    <li><a href="#features" class="nav-link">Why Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#payment" class="nav-btn nav-link">Pay Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up">"Six Yards of Grace, <br>Crafted Just for You."</h1>
+            <p class="fade-in-up delay-1">
+                Drape yourself in the timeless elegance of India. <br>
+                <em>Aapki khoobsurati, hamari pehchan.</em>
+            </p>
+            <div class="cta-group fade-in-up delay-2">
+                <button class="btn btn-primary" onclick="scrollToSection('collection')">Explore Collection</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow">↓</div>
+        </div>
+    </section>
+
+    <section id="collection" class="section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Trending Sarees</h2>
+            <p class="section-desc">Handpicked styles for weddings, parties, and daily wear.</p>
+            
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder p1">Red Banarasi</div>
+                        <span class="discount-tag">50% OFF</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Royal Banarasi Silk</h3>
+                        <p class="sub-text">Wedding Special | Gold Zari</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span> <span class="count">(124 reviews)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="price">₹2,999</span>
+                            <span class="mrp">₹5,999</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary full-width" onclick="openModal('modal-card')">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder p2">Blue Kanjivaram</div>
+                        <span class="discount-tag">New Arrival</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Midnight Blue Kanjivaram</h3>
+                        <p class="sub-text">Pure Silk | Temple Border</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span> <span class="count">(89 reviews)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="price">₹4,499</span>
+                            <span class="mrp">₹8,000</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary full-width" onclick="openModal('modal-card')">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder p3">Floral Georgette</div>
+                        <span class="discount-tag">Best Seller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Floral Print Georgette</h3>
+                        <p class="sub-text">Lightweight | Party Wear</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span> <span class="count">(210 reviews)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="price">₹1,299</span>
+                            <span class="mrp">₹2,500</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary full-width" onclick="openModal('modal-card')">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder p4">Black Cotton</div>
+                        <span class="discount-tag">Hot Deal</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Black Cotton</h3>
+                        <p class="sub-text">Office Wear | Comfortable</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span> <span class="count">(56 reviews)</span>
+                        </div>
+                        <div class="price-box">
+                            <span class="price">₹899</span>
+                            <span class="mrp">₹1,499</span>
+                        </div>
+                        <button class="btn btn-sm btn-primary full-width" onclick="openModal('modal-card')">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Why Anita Collections?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">✨</div>
+                    <h3>Premium Quality</h3>
+                    <p>100% Original fabrics checked by experts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Shipping across India within 4-5 days.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">❤️</div>
+                    <h3>Happiness Guaranteed</h3>
+                    <p>We ensure you smile with every drape. Quality you can trust forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-box">
+                <p>We are here to help you 24/7.</p>
+                
+                <div class="contact-info-row">
+                    <div class="c-item">
+                        <span class="c-icon">📞</span>
+                        <h3>Mobile</h3>
+                        <p><a href="tel:+916268281490">+91 6268281490</a></p>
+                    </div>
+                    <div class="c-item">
+                        <span class="c-icon">✉️</span>
+                        <h3>Email</h3>
+                        <p><a href="mailto:anitajha513@gmail.com">anitajha513@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="simple-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" placeholder="Your Phone Number" required>
+                    <textarea placeholder="Which saree do you want to buy?" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Secure Payment Mode</h2>
+            <p class="section-desc">Choose how you want to pay.</p>
+            
+            <div class="payment-options">
+                <div class="pay-card" onclick="openModal('modal-card')">
+                    <div class="pay-icon">💳</div>
+                    <h3>Pay via Card</h3>
+                    <p>Credit / Debit Cards</p>
+                </div>
+                <div class="pay-card" onclick="openModal('modal-upi')">
+                    <div class="pay-icon">📱</div>
+                    <h3>Pay via UPI</h3>
+                    <p>GPay / PhonePe / Paytm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Anita Collections. All rights reserved.</p>
+            <p>Contact: +91 6268281490 | anitajha513@gmail.com</p>
+        </div>
+    </footer>
+
+    <div id="modal-card" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal-card')">&times;</button>
+            <h2>Card Payment</h2>
+            <form class="fake-payment-form" onsubmit="event.preventDefault(); alert('Order Placed Successfully!'); closeModal('modal-card');">
+                <div class="form-group">
+                    <label>Card Number</label>
+                    <input type="text" placeholder="0000 0000 0000 0000" maxlength="19" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Expiry</label>
+                        <input type="text" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="password" placeholder="123" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary full-width">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-upi" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal-upi')">&times;</button>
+            <h2>Pay via UPI</h2>
+            <div class="upi-container">
+                <p>Pay to Mobile: <strong>6268281490</strong></p>
+                <div class="qr-placeholder"><span>[ QR Code ]</span></div>
+                <form class="fake-payment-form" onsubmit="event.preventDefault(); alert('Payment Verified! Order Placed.'); closeModal('modal-upi');">
+                    <div class="form-group">
+                        <label>Transaction ID (UTR)</label>
+                        <input type="text" placeholder="Enter UTR Number" required>
+                    </div>
+                    <button class="btn btn-primary full-width">Verify & Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
