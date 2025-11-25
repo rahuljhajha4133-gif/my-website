@@ -75,19 +75,35 @@ header { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(1
 .hero p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px; font-style: italic; }
 .scroll-indicator { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: var(--text-muted); }
 
-/* --- AMAZON STYLE PRODUCT GRID --- */
+/* --- AMAZON STYLE PRODUCT GRID (UPDATED FOR IMAGES) --- */
 .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .product-card { background: white; border-radius: 8px; overflow: hidden; transition: 0.3s; position: relative; color: #333; }
 .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(255, 64, 129, 0.3); }
 
-.product-image { height: 280px; position: relative; background: #eee; }
-.img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
-.p1 { background: linear-gradient(to bottom, #800000, #400000); } 
-.p2 { background: linear-gradient(to bottom, #000080, #000040); } 
-.p3 { background: linear-gradient(to bottom, #ff69b4, #c71585); } 
-.p4 { background: linear-gradient(to bottom, #333, #000); } 
+/* New Image Styles */
+.product-image {
+    height: 350px; /* Height adjusted for full photos */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
 
-.discount-tag { position: absolute; top: 10px; left: 10px; background: #cc0000; color: white; padding: 4px 8px; font-size: 0.8rem; font-weight: bold; border-radius: 4px; }
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills box without distortion */
+    object-position: top center; /* Focuses on the top part of the saree/model */
+    transition: transform 0.5s ease;
+}
+
+/* Hover Effect: Zoom in slightly */
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+/* Removed old placeholder styles (.img-placeholder, .p1, .p2 etc.) */
+
+.discount-tag { position: absolute; top: 10px; left: 10px; background: #cc0000; color: white; padding: 4px 8px; font-size: 0.8rem; font-weight: bold; border-radius: 4px; z-index: 2; }
 
 .product-info { padding: 15px; text-align: left; }
 .product-info h3 { font-size: 1.1rem; margin-bottom: 3px; color: #000; }
@@ -156,6 +172,7 @@ footer { background: black; padding: 20px; text-align: center; border-top: 1px s
         align-items: center;
         justify-content: flex-start;
         padding-top: 50px;
+        z-index: 999; /* Ensure it's above other content */
     }
     .nav-menu.active { right: 0; }
     .nav-links { flex-direction: column; width: 100%; }
